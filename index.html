@@ -108,13 +108,13 @@
 					});
 
 					// What do you think?
-					zoombot.on(['what do you think', 'any ideas']).then((i) => {
+					zoombot.on(['what do you think', 'any ideas', "what"]).then((i) => {
 						if(audioOn){
 							zoombot.say("hmmmmmmmmmm, I'm thinking");
 							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');}, 1400);
-							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 5000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 5000);
 							setTimeout(function(){zoombot.say("let's circle back on this");}, 5000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 5000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 5700);
@@ -134,7 +134,7 @@
 					});
 
 					// Can you take care of this?
-					zoombot.on(['are you ok']).then((i) => {
+					zoombot.on(['are you ok', 'russell']).then((i) => {
 						if(audioOn){
 							zoombot.say("I think it is just my internet connection. sorry.");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
