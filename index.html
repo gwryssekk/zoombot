@@ -57,7 +57,7 @@
 						"What is your ask?",
 						"Man, thank goodness it's friday, am I right?",
 						"Do you have any plans for this weekend?",
-						"This reminds me of dragon ball zee",
+						"This reminds me of the first time I...oh, never mind.",
 						"Did you catch the big sports game last night?",
 						"I'm so happy we could all get together like this",
 						"Did somebody say pizza?",
@@ -113,7 +113,7 @@
 					});
 
 					// Can you take care of this
-					zoombot.on(['can you take care of this', 'please']).then((i) => {
+					zoombot.on(['can you take care of this', 'would you']).then((i) => {
 						if(audioOn){
 							zoombot.say("i don't have the bandwith");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
@@ -124,7 +124,7 @@
 					});
 
 					// What do you think?
-					zoombot.on(['what do you think', 'any ideas', "what"]).then((i) => {
+					zoombot.on(['what do you think', 'any ideas']).then((i) => {
 						if(audioOn){
 							zoombot.say("hmmmmmmmmmm, I'm thinking");
 							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
@@ -150,7 +150,7 @@
 					});
 
 					// Can you take care of this?
-					zoombot.on(['are you ok', 'russell']).then((i) => {
+					zoombot.on(['are you ok', 'russell', "gary", "russ"]).then((i) => {
 						if(audioOn){
 							zoombot.say("I think it is just my internet connection. sorry.");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
@@ -216,7 +216,7 @@
 					});
 
 					// Can you send
-					zoombot.on(['can you send']).then((i) => {
+					zoombot.on(['can you send', "send"]).then((i) => {
 						if(audioOn){
 							zoombot.say("i'll chime. it to you after this call");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
@@ -253,7 +253,7 @@
 						}
 					});
 
-					zoombot.on(['cloud formation', 'dynamo', 'cloud watch', 'service']).then((i) => {
+					zoombot.on(['cloud formation', 'dynamo', 'cloud watch', 'service', "graph"]).then((i) => {
 						if(audioOn){
 							zoombot.say("That's a great technology!");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
