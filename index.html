@@ -97,7 +97,7 @@
 					});
 
 					// Can you take care of this
-					zoombot.on(['can you take care of this']).then((i) => {
+					zoombot.on(['can you take care of this', 'please']).then((i) => {
 						if(audioOn){
 							zoombot.say("i don't have the bandwith");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
@@ -182,6 +182,19 @@
 					zoombot.on(['drinking', 'beer', 'happy', 'hour']).then((i) => {
 						if(audioOn){
 							zoombot.say("is it too. early for red wine? ha ha ha ha ha ha ha ha ha.");
+							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 2200);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3200);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 4000);
+						}
+					});
+
+					zoombot.on(['shit', 'fuck', 'damn', 'crap']).then((i) => {
+						if(audioOn){
+							zoombot.say("Now, now.  Let's not be vulgar.");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
