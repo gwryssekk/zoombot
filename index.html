@@ -51,20 +51,15 @@
 					// Yay Artyom!!
 					zoombot = new Artyom();
 					const phrases = [
-						"Who said that?",
+						
 						"I'm sorry, could you please repeat that?",
-						"Yes, I'm listening.",
-						"Don't I know it!",
-						"What is your ask?",
+			
 						"Man, thank goodness it's friday, am I right?",
 						"Do you have any plans for this weekend?",
 						"This reminds me of the first time I...oh, never mind.",
 						"Did you catch the big sports game last night?",
-						"I'm so happy we could all get together like this",
-						"Did somebody say pizza?",
-						"You down for some reggae tonight?",
-						"Sometimes I feel like the catcher in the rye",
-						"Smooth jazz, mostly."
+						"I'm so happy we could all get together like this"
+
 					];
 
 					// If you prefer a female voice uncomment the next line of things
@@ -81,7 +76,7 @@
 						} else {
 							$(this).text('TURN OFF ZOOMBOT');
 							audioOn = true;
-							zoombot.say("hi guys. russell  here. my video is a little choppy sorry. how is everyone today?");
+							zoombot.say("hi guys. russell  here. my video is a little choppy, sorry. how is everyone today?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
@@ -93,7 +88,7 @@
 					// Hello
 					zoombot.on(['hello', 'good morning']).then((i) => {
 						if(audioOn){
-							zoombot.say("hi guys. russell  here. my video is a little choppy sorry. how is everyone today?");
+							zoombot.say("hi guys. russell  here. my video is a little choppy, sorry. how is everyone today?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
@@ -163,7 +158,7 @@
 
 					zoombot.on(['amazon']).then((i) => {
 						if(audioOn){
-							zoombot.say("cha ching!");
+							zoombot.say("Amazon is the best");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
@@ -198,6 +193,28 @@
 						if(audioOn){
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
 							zoombot.say("Hello, Sam!");
+							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2200);
+						}
+					});
+
+					zoombot.on(['Don']).then((i) => {
+						if(audioOn){
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
+							zoombot.say("Hello, Don!");
+							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2200);
+						}
+					});
+
+					zoombot.on(['Brad']).then((i) => {
+						if(audioOn){
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
+							zoombot.say("Hello, Brad!");
 							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
