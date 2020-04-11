@@ -71,10 +71,10 @@
 					// Add controls for on/off
 					$('#btnOnOff').click(function(){
 						if(audioOn){
-							$(this).text('TURN ON ZOOMBOT');
+							$(this).text('TURN ON GaryBot');
 							audioOn = false;
 						} else {
-							$(this).text('TURN OFF ZOOMBOT');
+							$(this).text('TURN OFF GaryBot');
 							audioOn = true;
 							zoombot.say("hi guys. russell  here. my video is a little choppy, sorry. how is everyone today?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
@@ -193,6 +193,17 @@
 						if(audioOn){
 							
 							zoombot.say("Hello, Emerson!");
+							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2200);
+						}
+					});
+
+					zoombot.on(['Toop', 'Tup', 'Trupti', 'Troop tee', 'troop tee']).then((i) => {
+						if(audioOn){
+							
+							zoombot.say("Hello, troop tee.  Kisses!");
 							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
