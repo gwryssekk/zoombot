@@ -189,6 +189,17 @@
 						}
 					});
 
+					zoombot.on(['Emerson']).then((i) => {
+						if(audioOn){
+							
+							zoombot.say("Hello, Emerson!");
+							$('#pics').css('background-image', 'url(img/zoombot-thinking.jpg)');
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open3.jpg)');}, 1400);
+							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 2200);
+						}
+					});
+
 					zoombot.on(['sam']).then((i) => {
 						if(audioOn){
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
