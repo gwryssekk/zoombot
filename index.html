@@ -76,7 +76,7 @@
 						} else {
 							$(this).text('TURN OFF GaryBot');
 							audioOn = true;
-							zoombot.say("hi guys. russell  here. my video is a little choppy, sorry. how is everyone today?");
+							zoombot.say("hi guys. gary  here. my video is a little choppy, sorry. how is everyone today?");
 							$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 1000);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 1400);
@@ -222,7 +222,7 @@
 						}
 					});
 
-					zoombot.on(['Don']).then((i) => {
+					zoombot.on(['Doned']).then((i) => {
 						if(audioOn){
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 1400);
 							zoombot.say("Hello, Don!");
