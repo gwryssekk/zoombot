@@ -341,6 +341,37 @@
 						}
 					});
 
+					zoombot.on(['liam', 'leeum']).then((i) => {
+						if(audioOn){
+							greet('liam')
+						}
+					});
+					zoombot.on(['zoe', 'zoey', 'zoee']).then((i) => {
+						if(audioOn){
+							greet('zoe')
+						}
+					});
+					zoombot.on(['frankie', 'frances']).then((i) => {
+						if(audioOn){
+							greet('frankie')
+						}
+					});
+					zoombot.on(['troopti', 'troopi', 'trupti']).then((i) => {
+						if(audioOn){
+							greet('troopti')
+						}
+					});
+					zoombot.on(['lauren', 'loren']).then((i) => {
+						if(audioOn){
+							greet('loren')
+						}
+					});
+					zoombot.on(['zach', 'zak']).then((i) => {
+						if(audioOn){
+							greet('zach')
+						}
+					});
+
 
 					// Kickstart my heart
 					zoombot.initialize({
@@ -383,6 +414,10 @@
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open1.jpg)');}, 2200);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-open2.jpg)');}, 3200);
 							setTimeout(function(){$('#pics').css('background-image', 'url(img/zoombot-smile.jpg)');}, 4000);
+			}
+
+			const greet = (name) => {
+				say("Well, what do you know, it's " + name +".  You are my favorite person");
 			}
 		</script>
 	</body>
